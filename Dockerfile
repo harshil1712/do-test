@@ -1,3 +1,5 @@
+FROM node:14.15-alpine as builder
+
 RUN apk add --update graphicsmagick tzdata git tini su-exec
 
 # # Set a custom user to not have n8n run as root
